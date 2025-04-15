@@ -1,0 +1,25 @@
+/* specify the width of the icons in terms of folder size because discord hardcoded that.*/
+.visual-refresh .svg_cc5dd2
+{
+	width: var(--guildbar-folder-size); 
+	height: var(--guildbar-folder-size);
+}
+
+/* move the non-server icons in the server bar to the middle again. TODO: test responsivenes on different resolutions*/
+.expandedFolderIconWrapper__48112 path,
+.circleIconButton__5bc7e path
+{ 
+	transform: translate(-6px,-6px);
+}
+
+/* these make the non-server icons in the server list not cut off*/
+.expandedFolderIconWrapper__48112 svg,
+.circleIconButton__5bc7e svg {
+	overflow: visible;
+}
+
+/* These variables control the size of the icons in the server bar and make them x% bigger*/
+:root {
+    --guildbar-folder-size: 58px;
+    --guildbar-avatar-size: 50px;
+}
